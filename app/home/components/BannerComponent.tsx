@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-const images = ["/images/home/sports.png", "/images/home/sports1.jpg"];
+const images = ["/images/home/Sports.png", "/images/home/Sports1.jpg"];
 
 const BannerComponent = () => {
   const [currentImageState, setCurrentImageState] = useState(0);
