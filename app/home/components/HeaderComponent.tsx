@@ -55,51 +55,57 @@ const HeaderComponent = () => {
     }`;
 
   return (
-    <nav className="fixed flex w-full xs:h-[120px] xl:h-26.25 p-6 xl:p-16 bg-purpleBackground justify-between items-center z-50">
-      {/* LOGO */}
-      <Link href="/" onClick={() => handleLinkClick("/")}>
-        <Image
-          src={isMenuOpenState ? PleimitLogoBurger : PleimitLogo}
-          alt="logo"
-          height={100}
-          width={170}
-          className="w-28 xl:w-30"
-        />
-      </Link>
+    <nav className="fixed top-0 w-full bg-purpleBackground z-50">
+      {/* CONTAINER */}
+      <div
+        className="container mx-auto mt-2.5
+    flex justify-between items-center
+    xs:h-[120px] xl:h-26.25
+    px-6 xl:px-16"
+      >
+        {/* LOGO */}
+        <Link href="/" onClick={() => handleLinkClick("/")}>
+          <Image
+            src={isMenuOpenState ? PleimitLogoBurger : PleimitLogo}
+            alt="logo"
+            height={100}
+            width={170}
+            className="w-28 xl:w-30"
+          />
+        </Link>
 
-      {/* DESKTOP MENU */}
-      <ul className="hidden xl:flex gap-40 text-[18px] font-bold">
-        <li className={getNavItemClasses("/")}>
-          <Link href="/" onClick={() => handleLinkClick("/")}>
-            Home
-          </Link>
-        </li>
-        <li className={getNavItemClasses("/#aboutUs")}>
-          <Link href="/#aboutUs" onClick={() => handleLinkClick("/#aboutUs")}>
-            Nosotros
-          </Link>
-        </li>
-        <li className={getNavItemClasses("/#contact")}>
-          <Link href="/#contact" onClick={() => handleLinkClick("/#contact")}>
-            Contacto
-          </Link>
-        </li>
-      </ul>
+        {/* DESKTOP MENU */}
+        <ul className="hidden xl:flex gap-40 text-[18px] font-bold">
+          <li className={getNavItemClasses("/")}>
+            <Link href="/" onClick={() => handleLinkClick("/")}>
+              Home
+            </Link>
+          </li>
+          <li className={getNavItemClasses("/#aboutUs")}>
+            <Link href="/#aboutUs" onClick={() => handleLinkClick("/#aboutUs")}>
+              Nosotros
+            </Link>
+          </li>
+          <li className={getNavItemClasses("/#contact")}>
+            <Link href="/#contact" onClick={() => handleLinkClick("/#contact")}>
+              Contacto
+            </Link>
+          </li>
+        </ul>
 
-      {/* BURGER BUTTON */}
-      {!isMenuOpenState && (
-        <div className="xl:hidden flex items-center">
+        {/* BURGER */}
+        {!isMenuOpenState && (
           <button
             onClick={toggleMenu}
-            className="text-white"
+            className="xl:hidden text-white"
             aria-label="open-menú"
           >
             <FaBars size={35} />
           </button>
-        </div>
-      )}
+        )}
+      </div>
 
-      {/* MOBILE MENU */}
+      {/* MOBILE MENU (FULL WIDTH) */}
       {isMenuOpenState && (
         <div className="fixed top-0 left-0 w-full h-full bg-white p-8 z-50 menuSlideDown flex flex-col">
           {/* HEADER */}
@@ -122,42 +128,21 @@ const HeaderComponent = () => {
             </button>
           </div>
 
-          <ul className="flex flex-col gap-20 text-purpleBackground font-bold text-xl items-start">
-            <li className="cursor-pointer" onClick={() => handleLinkClick("/")}>
-              Home
-            </li>
-            <li
-              className="cursor-pointer"
-              onClick={() => handleLinkClick("/#aboutUs")}
-            >
-              Nosotros
-            </li>
-            <li
-              className="cursor-pointer"
-              onClick={() => handleLinkClick("/#contact")}
-            >
-              Contacto
-            </li>
+          <ul className="flex flex-col gap-20 text-purpleBackground font-bold text-xl">
+            <li onClick={() => handleLinkClick("/")}>Home</li>
+            <li onClick={() => handleLinkClick("/#aboutUs")}>Nosotros</li>
+            <li onClick={() => handleLinkClick("/#contact")}>Contacto</li>
           </ul>
 
-          {/* FOOTER  */}
+          {/* FOOTER */}
           <div className="mt-auto">
             <div className="flex gap-3 mb-6 items-center justify-center">
-              <Image
-                src={AppStore}
-                alt="app-store"
-                height={150}
-                width={110}
-                quality={100}
-                style={{ objectFit: "contain" }}
-              />
+              <Image src={AppStore} alt="app-store" height={150} width={110} />
               <Image
                 src={GooglePlay}
                 alt="google-play"
                 height={150}
                 width={110}
-                quality={100}
-                style={{ objectFit: "contain" }}
               />
             </div>
 
