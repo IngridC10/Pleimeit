@@ -1,0 +1,44 @@
+import Image from "next/image";
+const RateEventComponent = () => {
+  return (
+    <section className="section min-h-screen bg-white flex justify-center items-center">
+      <div
+        className=" section-container
+     flex flex-row justify-between items-center "
+      >
+        <div className="flex items-center gap-12.5 ">
+          <div className="shadow-[0_8px_30px_rgba(174,172,243,0.4)] rounded-2xl overflow-hidden">
+            <Image
+              src="/images/home/RateEvent1.png"
+              width={250}
+              height={100}
+              alt="event-1"
+            />
+          </div>
+
+          <div className="shadow-[0_8px_30px_rgba(174,172,243,0.4)]  rounded-2xl overflow-hidden ">
+            <Image
+              src="/images/home/RateEvent2.png"
+              width={250}
+              height={100}
+              alt="event-2"
+            />
+          </div>
+        </div>
+
+        <div className="w-87.5 flex flex-col gap-1  ">
+          <h1 className="font-inter text-4xl  font-bold">
+            Califica tu último evento
+          </h1>
+          <p className="text-black font-inter">
+            Evalúa la experiencia del juego y ayuda a que la comunidad crezca
+            con jugadores comprometidos. Tus opiniones son anónimas y mejoran
+            los futuros encuentros.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default RateEventComponent;
