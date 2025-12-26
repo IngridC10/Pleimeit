@@ -5,16 +5,16 @@ const AboutUsComponent = () => {
     <section
       id="about"
       className="
-    relative w-full h-97.5 flex justify-center items-center overflow-hidden"
+    relative section h-135 flex justify-center items-center overflow-hidden"
     >
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-position-[center_38%]"
         style={{ backgroundImage: "url('/images/home/BackgroundImage.png')" }}
       />
 
       <div className="absolute inset-0 bg-purpleDarkBackground/60 backdrop-brightness-75" />
 
-      <div className="relative container mx-auto xl:py-20 flex flex-col justify-center items-center gap-4.5 text-center">
+      <div className="relative section-container  flex flex-col justify-center items-center gap-4.5 text-center">
         <h1 className="text-white font-inter font-bold text-3xl">
           Somos Pleimeit, una comunidad que une el <br />
           deporte con la tecnología.

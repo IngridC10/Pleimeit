@@ -12,22 +12,22 @@ const FooterComponent = () => {
         <div className="flex flex-col lg:flex-row justify-between lg:items-end gap-6">
           <ul className="flex flex-col font-inter xl:flex-row gap-6  xs:text-md lg:text-lg text-textBlack font-medium">
             <li>
-              <Link href="/contacto" className="hover:text-purpleBackground">
+              <Link href="#contact" className="hover:text-purpleBackground">
                 Contacto
               </Link>
             </li>
             <li>
-              <Link href="/terminos" className="hover:text-purpleBackground">
+              <Link href="/#" className="hover:text-purpleBackground">
                 Términos de uso
               </Link>
             </li>
             <li>
-              <Link href="/privacidad" className="hover:text-purpleBackground">
+              <Link href="/#" className="hover:text-purpleBackground">
                 Política de privacidad
               </Link>
             </li>
             <li>
-              <Link href="/faq" className="hover:text-purpleBackground">
+              <Link href="/#" className="hover:text-purpleBackground">
                 Preguntas frecuentes
               </Link>
             </li>

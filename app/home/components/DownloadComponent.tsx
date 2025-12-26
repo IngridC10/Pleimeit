@@ -3,10 +3,10 @@ import Image from "next/image";
 
 const DownloadComponent = () => {
   return (
-    <section className="relative bg-purpleBackground text-white overflow-hidden h-140 ">
+    <section className=" section relative bg-purpleBackground text-white overflow-hidden h-140 ">
       <div
-        className="container h-full mx-auto 
-     gap-y-0  xl:gap-y-8  xl:py-20 grid grid-cols-1 lg:grid-cols-2 gap-10"
+        className=" section-container h-full 
+   grid grid-cols-1 lg:grid-cols-2 gap-10"
       >
         <div className="flex flex-col justify-center z-10">
           <h1 className="text-4xl lg:text-4xl font-inter font-extrabold leading-tight mb-8">

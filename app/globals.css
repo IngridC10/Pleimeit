@@ -80,3 +80,12 @@ body {
 .menu-slide-down {
   animation: slideDown 1s ease forwards;
 }
+
+@layer components {
+  .section-container {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .section {
+    @apply w-full py-16 md:py-24;
+  }
+}

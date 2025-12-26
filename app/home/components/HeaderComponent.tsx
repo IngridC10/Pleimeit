@@ -55,9 +55,9 @@ const HeaderComponent = () => {
     }`;
 
   return (
-    <nav className="fixed top-0 w-full bg-purpleBackground z-50">
+    <nav className=" fixed top-0 w-full bg-purpleBackground z-50">
       <div
-        className="container mx-auto mt-2.5
+        className=" section-container mx-auto mt-2.5
     flex justify-between items-center
     xs:h-30 xl:h-26.25
    "

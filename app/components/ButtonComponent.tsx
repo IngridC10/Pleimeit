@@ -30,7 +30,7 @@ const ButtonComponent: React.FC<CustomButtonProps> = ({
           ${hoverBgColor}
         `}
       >
-        <h2 className="text-md font-inter ">{text}</h2>
+        <h2 className="text-md font-inter  font-medium">{text}</h2>
       </div>
     </Link>
   );
