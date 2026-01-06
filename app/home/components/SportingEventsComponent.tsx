@@ -21,7 +21,7 @@ const SportingEventsComponent = () => {
   return (
     <section
       ref={sectionRef}
-      className="  w-full bg-white snap-start xs:h-187.5 sm:h-219.5 lg:min-h-[calc(100vh-72px)] scroll-mt-18 flex flex-col"
+      className="  w-full bg-white snap-start py-12 md:py-20 lg:py-24 lg:min-h-[calc(100vh-72px)] scroll-mt-18 flex flex-col"
     >
       <div className="lg:hidden w-full  mt-4">
         <div

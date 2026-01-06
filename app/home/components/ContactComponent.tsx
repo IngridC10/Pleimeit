@@ -37,7 +37,7 @@ const ContactComponent = () => {
       ref={sectionRef}
       id="contact"
       className={`
-        section bg-[#F7F8FE] xs:py-20 lg:py-40 lg:min-h-[calc(100vh-72px)] lg:snap-center
+        section bg-[#F7F8FE] py-12 md:py-20 lg:py-24lg:min-h-[calc(100vh-72px)] lg:snap-center
     lg:scroll-mt-4.5 
       
       
