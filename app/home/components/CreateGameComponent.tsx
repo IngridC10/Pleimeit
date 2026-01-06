@@ -23,6 +23,7 @@ const CreateGameComponent = () => {
       ref={sectionRef}
       className="
        bg-white
+       py-12 md:py-20 lg:py-24
   lg:snap-center
     lg:min-h-[calc(100vh-72px)]
     lg:scroll-mt-18

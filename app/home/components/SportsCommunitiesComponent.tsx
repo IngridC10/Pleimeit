@@ -25,8 +25,8 @@ const SportsCommunitiesComponent = () => {
   return (
     <section
       className="
-        bg-white flex items-center py-16
-        xs:h-150 lg:min-h-[calc(100vh-72px)]
+        bg-white flex items-center py-12 md:py-20 lg:py-24
+       lg:min-h-[calc(100vh-72px)]
         lg:snap-center lg:scroll-mt-18 lg:p-0
       "
     >
