@@ -67,17 +67,17 @@ const CreateGameComponent = () => {
               />
             </div>
 
-            <div className="h-72 w-40 sm:w-55 overflow-hidden rounded-t-2xl shadow-[0_8px_30px_rgba(0,0,0,0.15)] bg-white relative">
+            <div className="h-[80%] w-40 sm:w-55 overflow-hidden rounded-t-2xl shadow-[0_8px_30px_rgba(0,0,0,0.15)] bg-white relative">
               <img
                 src="/images/home/CurrentEvent.png"
                 alt="evento-actual"
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-contain object-top"
               />
             </div>
           </div>
 
           <div className="hidden lg:flex absolute bottom-0 lg:right-10 xl:right-14 2xl:right-18 items-end lg:gap-5 xl:gap-6 z-10">
-            <div className="w-auto min-w-[200px] max-w-[280px] h-[480px] overflow-hidden rounded-t-3xl shadow-[0_8px_30px_rgba(174,172,243,0.4)] bg-white relative">
+            <div className="w-auto min-w-[200px] max-w-[280px] h-[420px] overflow-hidden rounded-t-3xl shadow-[0_8px_30px_rgba(174,172,243,0.4)] bg-white relative">
               <img
                 src="/images/home/Step1.png"
                 alt="step-1"
@@ -85,7 +85,7 @@ const CreateGameComponent = () => {
               />
             </div>
 
-            <div className="w-auto min-w-[200px] max-w-[280px] h-[480px] overflow-hidden rounded-t-3xl shadow-[0_8px_30px_rgba(174,172,243,0.4)] bg-white relative">
+            <div className="w-auto min-w-[200px] max-w-[280px] h-[420px] overflow-hidden rounded-t-3xl shadow-[0_8px_30px_rgba(174,172,243,0.4)] bg-white relative">
               <img
                 src="/images/home/CurrentEvent.png"
                 alt="current-event"
