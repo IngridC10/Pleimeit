@@ -58,7 +58,7 @@ const CreateGameComponent = () => {
           </div>
 
           <div className="order-2 mt-8 flex flex-row justify-center gap-4 lg:hidden w-full -mb-12 z-10">
-            <div className="h-72 w-40 sm:w-55 overflow-hidden rounded-t-2xl shadow-[0_8px_30px_rgba(0,0,0,0.15)] bg-white relative">
+            <div className="h-[80%] w-40 sm:w-55 overflow-hidden rounded-t-2xl shadow-[0_8px_30px_rgba(0,0,0,0.15)] bg-white relative">
               <img
                 src="/images/home/Step1.png"
                 alt="paso-1"

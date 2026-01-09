@@ -1,5 +1,7 @@
 "use client";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 const DownloadComponent = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -61,16 +63,35 @@ const DownloadComponent = () => {
             </div>
 
             <div className="flex flex-row xs:justify-center lg:justify-start items-center gap-4 mb-12 lg:mb-0">
-              <img
-                src="/images/home/AppStore.png"
-                alt="Descargar en App Store"
-                className="h-12 lg:h-14 w-auto cursor-pointer transition-transform hover:scale-105"
-              />
-              <img
-                src="/images/home/GooglePlay.png"
-                alt="Descargar en Google Play"
-                className="h-12 lg:h-14 w-auto cursor-pointer transition-transform hover:scale-105"
-              />
+              <Link
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Image
+                  src="/images/home/AppStore.png"
+                  alt="App Store"
+                  width={200}
+                  height={80}
+                  className="h-12 w-34 xl:h-20 xl:w-auto cursor-pointer transition-transform hover:scale-105"
+                />
+              </Link>
+
+              <Link
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Image
+                  src="/images/home/GooglePlay.png"
+                  alt="Google Play"
+                  width={200}
+                  height={80}
+                  className="h-12 w-34 xl:h-20 xl:w-auto cursor-pointer transition-transform hover:scale-105"
+                />
+              </Link>
             </div>
           </div>
 
