@@ -52,6 +52,8 @@ const RateEventComponent = () => {
               src="/images/home/RateEvent1.png"
               width={250}
               height={500}
+              quality={90}
+              sizes="(max-width: 768px) 250px, (max-width: 1200px) 300px, 400px"
               alt="rate-event-1"
               className="mx-auto"
             />
@@ -62,6 +64,8 @@ const RateEventComponent = () => {
               src="/images/home/RateEvent2.png"
               width={250}
               height={500}
+              quality={90}
+              sizes="(max-width: 768px) 250px, (max-width: 1200px) 300px, 400px"
               alt="rate-event-2"
               className="mx-auto"
             />

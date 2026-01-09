@@ -68,6 +68,8 @@ const SportingEventsComponent = () => {
               src="/images/home/Event1.png"
               width={250}
               height={500}
+              quality={90}
+              sizes="(max-width: 768px) 250px, (max-width: 1200px) 300px, 400px"
               alt="event-1"
             />
           </div>
@@ -77,6 +79,8 @@ const SportingEventsComponent = () => {
               src="/images/home/Event2.png"
               width={250}
               height={500}
+              quality={90}
+              sizes="(max-width: 768px) 250px, (max-width: 1200px) 300px, 400px"
               alt="event-2"
             />
           </div>

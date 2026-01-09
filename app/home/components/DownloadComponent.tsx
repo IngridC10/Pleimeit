@@ -74,6 +74,7 @@ const DownloadComponent = () => {
                   alt="App Store"
                   width={200}
                   height={80}
+                  quality={90}
                   className="h-12 w-34 xl:h-20 xl:w-auto cursor-pointer transition-transform hover:scale-105"
                 />
               </Link>
@@ -89,6 +90,7 @@ const DownloadComponent = () => {
                   alt="Google Play"
                   width={200}
                   height={80}
+                  quality={90}
                   className="h-12 w-34 xl:h-20 xl:w-auto cursor-pointer transition-transform hover:scale-105"
                 />
               </Link>

@@ -71,6 +71,7 @@ lg:min-h-[calc(100vh-152px)]
               alt="Deportistas"
               fill
               priority
+              quality={90}
               className="object-contain transition-opacity duration-700"
             />
           </div>
@@ -87,6 +88,7 @@ lg:min-h-[calc(100vh-152px)]
                 alt="App Store"
                 width={200}
                 height={80}
+                quality={90}
                 className="h-12 w-34 xl:h-20 xl:w-auto cursor-pointer transition-transform hover:scale-105"
               />
             </Link>
@@ -102,6 +104,7 @@ lg:min-h-[calc(100vh-152px)]
                 alt="Google Play"
                 width={200}
                 height={80}
+                quality={90}
                 className="h-12 w-34 xl:h-20 xl:w-auto cursor-pointer transition-transform hover:scale-105"
               />
             </Link>
@@ -122,6 +125,7 @@ lg:min-h-[calc(100vh-152px)]
           alt="Deportistas"
           fill
           priority
+          quality={90}
           className="object-contain transition-opacity duration-700"
         />
       </div>
