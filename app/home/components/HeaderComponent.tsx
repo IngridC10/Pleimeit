@@ -2,7 +2,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import PleimitLogo from "../../../public/images/home/PleimitLogo.png";
-import PleimitLogoBurger from "../../../public/images/home/PleimitLogoBurger.png";
 import AppStore from "../../../public/images/home/AppStore.png";
 import GooglePlay from "../../../public/images/home/GooglePlay.png";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -52,7 +51,7 @@ const HeaderComponent = () => {
       <div className="max-w-7xl mx-auto w-full px-6 md:px-12 lg:px-20 flex justify-between items-center h-18">
         <Link href="/" onClick={handleLinkClick}>
           <Image
-            src={isMenuOpenState ? PleimitLogoBurger : PleimitLogo}
+            src={PleimitLogo}
             alt="logo"
             height={100}
             width={170}
@@ -60,7 +59,7 @@ const HeaderComponent = () => {
           />
         </Link>
 
-        <ul className="hidden lg:flex gap-17.5 font-raleway text-sm tracking-[0.25em] uppercase">
+        <ul className="hidden lg:flex gap-17  font-raleway text-sm tracking-[0.25em] uppercase font-light">
           <li className={navItemClasses}>
             <Link href="/#home" onClick={handleLinkClick}>
               HOME
@@ -90,15 +89,10 @@ const HeaderComponent = () => {
       </div>
 
       {isMenuOpenState && (
-        <div className="fixed top-0 left-0 w-full h-full bg-white p-8 z-50 menu-slide-down flex flex-col">
+        <div className="fixed top-0 left-0 w-full h-full bg-purpleBackground p-8 z-50 menu-slide-down flex flex-col">
           <div className="flex justify-between items-center mb-12">
             <Link href="/" onClick={toggleMenu}>
-              <Image
-                src={PleimitLogoBurger}
-                alt="logo"
-                width={140}
-                height={140}
-              />
+              <Image src={PleimitLogo} alt="logo" width={140} height={140} />
             </Link>
 
             <button
@@ -110,7 +104,7 @@ const HeaderComponent = () => {
             </button>
           </div>
 
-          <ul className="flex flex-col gap-20 text-purpleBackground font-raleway font-bold text-xl">
+          <ul className="flex flex-col gap-20 text-white tracking-[0.22em] font-raleway font-bold text-xl">
             <li>
               <Link href="/#home" onClick={handleLinkClick}>
                 HOME
@@ -132,23 +126,38 @@ const HeaderComponent = () => {
 
           <div className="mt-auto">
             <div className="flex gap-3 mb-6 items-center justify-center">
-              <Image
-                src={AppStore}
-                alt="app-store"
-                height={250}
-                width={150}
-                className="h-13 w-38"
-              />
-              <Image
-                src={GooglePlay}
-                alt="google-play"
-                height={250}
-                width={150}
-                className="h-13 w-38"
-              />
+              <Link
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Image
+                  src={AppStore}
+                  alt="app-store"
+                  height={250}
+                  width={150}
+                  className="h-13 w-38 cursor-pointer transition-transform hover:scale-105"
+                />
+              </Link>
+
+              <Link
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Image
+                  src={GooglePlay}
+                  alt="google-play"
+                  height={250}
+                  width={150}
+                  className="h-13 w-38 cursor-pointer transition-transform hover:scale-105"
+                />
+              </Link>
             </div>
 
-            <p className="text-black text-[13px] text-center font-bebas tracking-[0.25em] uppercase">
+            <p className="text-white text-[13px] text-center font-bebas tracking-[0.25em] uppercase">
               PRIVADA Y SEGURA · GRATIS PARA EMPEZAR
             </p>
           </div>

@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const slides = [
   {
@@ -74,21 +75,36 @@ lg:min-h-[calc(100vh-152px)]
             />
           </div>
 
-          <div className="flex items-center xs:justify-center lg:justify-start gap-5 xs:gap-5 lg:gap-10  md:mb-0 lg:mb-6">
-            <Image
-              src="/images/home/AppStore.png"
-              alt="App Store"
-              width={200}
-              height={80}
-              className="h-14 w-38 xl:h-20 xl:w-auto cursor-pointer transition-transform hover:scale-105"
-            />
-            <Image
-              src="/images/home/GooglePlay.png"
-              alt="Google Play"
-              width={200}
-              height={80}
-              className="h-14 w-38 xl:h-20 xl:w-auto cursor-pointer transition-transform hover:scale-105"
-            />
+          <div className="flex items-center xs:justify-center lg:justify-start gap-5 xs:gap-5 lg:gap-10 md:mb-0 lg:mb-6">
+            <Link
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <Image
+                src="/images/home/AppStore.png"
+                alt="App Store"
+                width={200}
+                height={80}
+                className="h-12 w-34 xl:h-20 xl:w-auto cursor-pointer transition-transform hover:scale-105"
+              />
+            </Link>
+
+            <Link
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <Image
+                src="/images/home/GooglePlay.png"
+                alt="Google Play"
+                width={200}
+                height={80}
+                className="h-12 w-34 xl:h-20 xl:w-auto cursor-pointer transition-transform hover:scale-105"
+              />
+            </Link>
           </div>
 
           <p className="font-bebas text-sm xl:text-xl tracking-[0.25em] uppercase text-center sm:text-center lg:text-start mt-8  xs:mt-8 md:mt-4 ">
