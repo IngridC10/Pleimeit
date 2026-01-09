@@ -51,7 +51,7 @@ const RateEventComponent = () => {
             <Image
               src="/images/home/RateEvent1.png"
               width={250}
-              height={100}
+              height={500}
               alt="rate-event-1"
               className="mx-auto"
             />
@@ -61,7 +61,7 @@ const RateEventComponent = () => {
             <Image
               src="/images/home/RateEvent2.png"
               width={250}
-              height={100}
+              height={500}
               alt="rate-event-2"
               className="mx-auto"
             />

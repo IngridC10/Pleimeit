@@ -32,20 +32,21 @@ const CreateGameComponent = () => {
   
   "
     >
-      <div className="section-container max-w-7xl mx-auto w-full px-6 md:px-12 lg:px-20">
+      <div className="section-container max-w-[1440px] mx-auto w-full px-6 md:px-12 lg:px-20">
         <div
           className={`
         relative flex flex-col lg:flex-row
         items-center justify-between
         bg-lila rounded-4xl
         pt-10 px-6  pb-0
-        lg:h-150
+        lg:aspect-[1712/704] lg:max-h-[704px]
+        lg:pt-12 lg:pb-12 lg:px-12 xl:px-16 2xl:px-20
         overflow-hidden lg:overflow-visible
         transition-all duration-700 ease-out
         ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
       `}
         >
-          <div className="order-1 w-full lg:w-105 flex flex-col gap-4 text-left z-20">
+          <div className="order-1 w-full lg:w-105 lg:flex-shrink-0 flex flex-col gap-4 lg:gap-6 text-left z-20">
             <h1 className="font-inter text-2xl lg:text-4xl font-bold text-textBlack lg:w-[288px] xl:w-95.25">
               Crea tu propio encuentro deportivo
             </h1>
@@ -75,20 +76,20 @@ const CreateGameComponent = () => {
             </div>
           </div>
 
-          <div className="hidden lg:flex absolute bottom-0  lg:right-5 xl:right-10 items-end lg:gap-5 xl:gap-12 z-10">
-            <div className="h-105 w-62.5 overflow-hidden rounded-t-3xl shadow-[0_8px_30px_rgba(174,172,243,0.4)] bg-white relative">
+          <div className="hidden lg:flex absolute bottom-0 lg:right-10 xl:right-14 2xl:right-18 items-end lg:gap-5 xl:gap-6 z-10">
+            <div className="w-auto min-w-[200px] max-w-[280px] h-[480px] overflow-hidden rounded-t-3xl shadow-[0_8px_30px_rgba(174,172,243,0.4)] bg-white relative">
               <img
                 src="/images/home/Step1.png"
                 alt="step-1"
-                className="w-full h-auto"
+                className="w-full h-[200%] object-contain object-top"
               />
             </div>
 
-            <div className="h-105 w-62.5 overflow-hidden rounded-t-3xl shadow-[0_8px_30px_rgba(174,172,243,0.4)] bg-white relative">
+            <div className="w-auto min-w-[200px] max-w-[280px] h-[480px] overflow-hidden rounded-t-3xl shadow-[0_8px_30px_rgba(174,172,243,0.4)] bg-white relative">
               <img
                 src="/images/home/CurrentEvent.png"
                 alt="current-event"
-                className="w-full h-auto"
+                className="w-full h-[200%] object-contain object-top"
               />
             </div>
           </div>

@@ -67,7 +67,7 @@ const SportingEventsComponent = () => {
             <Image
               src="/images/home/Event1.png"
               width={250}
-              height={100}
+              height={500}
               alt="event-1"
             />
           </div>
@@ -76,7 +76,7 @@ const SportingEventsComponent = () => {
             <Image
               src="/images/home/Event2.png"
               width={250}
-              height={100}
+              height={500}
               alt="event-2"
             />
           </div>
