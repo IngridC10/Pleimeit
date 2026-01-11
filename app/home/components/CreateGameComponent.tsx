@@ -67,11 +67,11 @@ const CreateGameComponent = () => {
               />
             </div>
 
-            <div className="h-72 w-40 sm:w-55 overflow-hidden rounded-t-2xl shadow-[0_8px_30px_rgba(0,0,0,0.15)] bg-white relative">
+            <div className="h-[80%] w-40 sm:w-55 overflow-hidden rounded-t-2xl shadow-[0_8px_30px_rgba(0,0,0,0.15)] bg-white relative">
               <img
                 src="/images/home/CurrentEvent.png"
                 alt="evento-actual"
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-contain object-top"
               />
             </div>
           </div>
