@@ -21,7 +21,7 @@ const SportingEventsComponent = () => {
   return (
     <section
       ref={sectionRef}
-      className="  w-full bg-white snap-start py-12 md:py-20 lg:py-24  lg:min-h-screen flex flex-col"
+      className="  w-full bg-white snap-start py-12 md:py-20 lg:py-24   lg:min-h-screen flex flex-col"
     >
       {/* <div className="lg:hidden w-full  mt-4">
         <div
@@ -42,9 +42,9 @@ const SportingEventsComponent = () => {
 
       <div
         className={`
-          section-container flex flex-col lg:flex-row 
+          section-container flex flex-col lg:flex-row  
           flex-1
-          items-center lg:justify-center gap-6.75  lg:gap-10  xl:gap-30
+          items-center lg:justify-center gap-6.75  lg:gap-10  mx-auto xl:gap-20
           transition-all duration-700 ease-out px-6 md:px-12  lg:px-20 max-w-7xl
           ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -68,9 +68,9 @@ const SportingEventsComponent = () => {
           >
             <div
               className="
-       w-41.25 h-90
-        sm:w-50 sm:h-107.5
-       lg:w-76.75 lg:h-166.75
+       w-39.25 h-90
+        sm:w-50 sm:h-107.5 md:w-55 md:h-120 lg:w-60 lg:h-130
+       xl:w-76 xl:h-156
         relative
       "
             >
@@ -79,7 +79,6 @@ const SportingEventsComponent = () => {
                 alt="event-1"
                 fill
                 quality={90}
-                className="object-contain"
               />
             </div>
           </div>
@@ -87,9 +86,9 @@ const SportingEventsComponent = () => {
           <div className="shadow-[0_8px_30px_rgba(0,0,0,0.15)] rounded-2xl overflow-hidden">
             <div
               className="
-       w-41.25 h-90
-        sm:w-55 sm:h-107.5
-       lg:w-76.75 lg:h-166.75
+       w-39.25 h-90
+        sm:w-55 sm:h-107.5  md:w-55 md:h-120  lg:w-60 lg:h-130
+     xl:w-76 xl:h-156
         relative
       "
             >
@@ -98,7 +97,6 @@ const SportingEventsComponent = () => {
                 alt="event-2"
                 fill
                 quality={90}
-                className="object-contain"
               />
             </div>
           </div>
