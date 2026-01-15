@@ -41,13 +41,12 @@ const BannerComponent = () => {
   
     flex
     items-center
-
     lg:snap-start
     lg:min-h-[calc(100vh-152px)]
     lg:scroll-mt-18
   "
     >
-      <div className="section-container px-6 md:px-12 lg:px-20 max-w-7xl flex flex-col lg:grid lg:grid-cols-2 xs:h-145 sm:h-142 lg:h-162 xl:h-172 xxl:h-205 relative z-10">
+      <div className="section-container px-6 md:px-12 lg:px-20 max-w-7xl flex flex-col lg:grid lg:grid-cols-2 h-146  xs:h-145 sm:h-142 lg:h-162 xl:h-172 xxl:h-205 relative z-10">
         <div className="flex flex-col justify-center lg:mb-7 xl:mb-40">
           <div className="max-w-xl  xs:h-62 sm:h-41  lg:h-59 xl:h-79   overflow-hidden   xs:mb-0 lg:mb-8">
             <h1 className="font-bebas text-4xl xs:text-4xl lg:text-4xl xl:text-6xl mb-2 text-center lg:text-left">
@@ -104,7 +103,7 @@ const BannerComponent = () => {
             </Link>
           </div>
 
-          <p className="font-bebas text-sm xl:text-2xl tracking-[0.25em] uppercase text-center sm:text-center lg:text-start lg:mt-10  xs:mt-4 md:mt-4 ">
+          <p className="font-bebas text-sm xl:text-2xl tracking-[0.25em] uppercase text-center sm:text-center lg:text-start lg:mt-10  mt-6  xs:mt-4 md:mt-4 ">
             DESCARGA LA APP - GRATIS PARA EMPEZAR
           </p>
         </div>

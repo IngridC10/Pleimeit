@@ -27,7 +27,7 @@ const RateEventComponent = () => {
       <div
         className={`
           section-container flex flex-col lg:flex-row
-          items-center lg:justify-center gap-10  lg:gap-10   xl:gap-30
+          items-center lg:justify-center gap-10  lg:gap-10   xl:gap-20
           transition-all duration-700 ease-out  max-w-7xl mx-auto px-6 md:px-12 lg:px-20
           ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -53,7 +53,8 @@ const RateEventComponent = () => {
         relative
         w-41.25 h-90
      sm:w-55 sm:h-107.5
-       lg:w-76.75 lg:h-166.75
+      md:w-55 md:h-120 lg:w-60 lg:h-130
+       xl:w-76 xl:h-156
       "
             >
               <Image
@@ -71,7 +72,8 @@ const RateEventComponent = () => {
         relative
         w-41.25 h-90
         sm:w-55 sm:h-107.5
-        lg:w-76.75 lg:h-166.75
+       md:w-55 md:h-120 lg:w-60 lg:h-130
+       xl:w-76 xl:h-156
       "
             >
               <Image
