@@ -39,14 +39,11 @@ const ContactComponent = () => {
       id="contact"
       className={`
         section bg-[#F8F8FF] py-12 md:py-20 lg:py-24 lg:min-h-screen flex justify-center items-center lg:snap-center
-    
-      
-      
       `}
     >
-      <div className="section-container p-5 lg:p-0 xl:p-6 xxl:p-8 max-w-7xl mx-auto px-6 md:px-12 lg:px-20  ">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-16">
-          <div className="max-w-xl w-full">
+      <div className="section-container max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-20">
+          <div className="w-full lg:flex-1">
             {isSubmittedState ? (
               <div className="text-center space-y-6">
                 <h2 className="text-3xl lg:text-4xl font-extrabold text-textBlack">
@@ -73,7 +70,7 @@ const ContactComponent = () => {
               <>
                 <h2
                   className={`
-    font-inter text-2xl text-center lg:text-left lg:text-[48px]
+    font-inter text-2xl xs:text-3xl text-center lg:text-left lg:text-[36px] xl:text-[48px]
     font-extrabold text-textBlack mb-4
     transition-all duration-700 ease-out
     ${isVisible ? "opacity-100 translate-y-0 " : "opacity-0 translate-y-6 "}
@@ -81,7 +78,7 @@ const ContactComponent = () => {
                 >
                   ¿Podemos ayudarte en algo?
                 </h2>
-                <p className="text-textBlack mb-8 leading-relaxed font-inter text-[16px] text-center lg:text-left lg:text-[20px]">
+                <p className="text-textBlack mb-4 leading-relaxed font-inter text-base text-center lg:text-left lg:text-lg xl:text-xl">
                   Desde preguntas técnicas hasta nuevas ideas para la app;
                   estamos aquí para escucharte.
                   <br />
@@ -89,7 +86,7 @@ const ContactComponent = () => {
                   contigo muy pronto.
                 </p>
 
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="font-inter text-sm font-medium text-textBlack">
@@ -150,7 +147,6 @@ const ContactComponent = () => {
                       Mensaje
                     </label>
                     <textarea
-                      rows={4}
                       required
                       placeholder="Cuéntanos brevemente cómo podemos ayudarte."
                       className="mt-1 w-full rounded-lg border border-gray-200 bg-white  text-textGraySecundary shadow-sm px-4 py-3 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-purpleBackground"
@@ -166,7 +162,7 @@ const ContactComponent = () => {
           {!isSubmittedState && (
             <div
               className={`
-                hidden lg:flex flex-1 justify-end
+                hidden lg:flex lg:flex-1 justify-center items-center
                 transition-all duration-700 delay-150
                 ${
                   isVisible
@@ -175,13 +171,15 @@ const ContactComponent = () => {
                 }
               `}
             >
-              <Image
-                src="/images/home/Workingman.png"
-                alt="Contacto Pleimeit"
-                width={620}
-                height={620}
-                className="object-contain"
-              />
+              <div className="relative w-full max-w-[500px] xl:max-w-[620px]">
+                <Image
+                  src="/images/home/Workingman.png"
+                  alt="Contacto Pleimeit"
+                  width={620}
+                  height={620}
+                  className="object-contain w-full h-auto"
+                />
+              </div>
             </div>
           )}
         </div>

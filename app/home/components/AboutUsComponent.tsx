@@ -13,11 +13,12 @@ const AboutUsComponent = () => {
       ref={ref}
       id="about"
       className="
-        relative section     lg:min-h-screen
+        relative section lg:min-h-screen
         flex justify-center items-center
         overflow-hidden
         bg-purpleBackground lg:bg-transparent
-        lg:snap-center 
+        lg:snap-center
+        py-12 md:py-20 lg:py-24
       "
     >
       <div
@@ -27,10 +28,10 @@ const AboutUsComponent = () => {
 
       <div className="hidden lg:block absolute inset-0 bg-purpleDarkBackground/80 backdrop-brightness-55" />
 
-      <div className="relative section-container flex flex-col justify-center items-center gap-4.5 text-center px-5">
+      <div className="relative section-container flex flex-col justify-center items-center gap-6 lg:gap-8 text-center px-6 md:px-12 lg:px-20 max-w-6xl mx-auto">
         <h1
           className={`
-            text-white font-inter font-bold text-3xl lg:text-[48px]
+            text-white font-inter font-bold text-2xl xs:text-3xl lg:text-4xl xl:text-[48px]
             transition-all duration-700 ease-out
             ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}
           `}
@@ -42,6 +43,7 @@ const AboutUsComponent = () => {
         <p
           className={`
     text-white font-inter max-w-4xl leading-relaxed hyphens-auto
+    text-base lg:text-lg xl:text-xl
     transition-all duration-700 delay-150 ease-out
     ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}
   `}
@@ -50,8 +52,8 @@ const AboutUsComponent = () => {
           deporte y la creación de comunidades reales. Creemos que la tecnología
           debe servir para unir a las personas fuera de las pantallas y chats.
           <br />
-          “Porque los amigos no se encuentran en una pantalla, sino donde ocurre
-          el juego”.
+          "Porque los amigos no se encuentran en una pantalla, sino donde ocurre
+          el juego".
         </p>
 
         <div

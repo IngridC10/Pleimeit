@@ -27,36 +27,35 @@ const DownloadComponent = () => {
       ref={sectionRef}
       className={`
         relative bg-purpleBackground text-white overflow-hidden
-       py-12 md:py-20 lg:py-24  lg:min-h-screen flex items-center
-        transition-all duration-700 ease-out     lg:snap-center
-   
+        py-12 md:py-20 lg:py-24 lg:min-h-screen flex items-center
+        transition-all duration-700 ease-out lg:snap-center
         ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}
       `}
     >
-      <div className="max-w-7xl mx-auto w-full px-6 lg:px-20 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full items-start">
+      <div className="max-w-7xl mx-auto w-full px-6 md:px-12 lg:px-20 relative z-10">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-20 w-full">
           <div
             className={`
-    flex flex-col pt-16 lg:pt-12 xl:pt-16
-    transition-all duration-700 delay-100
-    items-center md:items-center lg:items-start
-    text-center md:text-center lg:text-left
-    ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-16"}
-  `}
+              flex flex-col flex-1
+              transition-all duration-700 delay-100
+              items-center lg:items-start
+              text-center lg:text-left
+              ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-16"}
+            `}
           >
-            <h1 className="text-2xl lg:text-[48px] font-extrabold leading-tight mb-4  tracking-tight">
+            <h1 className="text-2xl xs:text-3xl lg:text-4xl xl:text-[48px] font-extrabold leading-tight mb-4 tracking-tight">
               Descarga Pleimeit y únete a tu <br className="hidden md:block" />
               comunidad deportiva
             </h1>
 
-            <p className="text-lg lg:text-xl text-white/90 max-w-xl mb-8 leading-relaxed">
+            <p className="text-base lg:text-lg xl:text-xl text-white/90 max-w-xl mb-8 leading-relaxed">
               Crea eventos, participa y conoce a personas que comparten tu
-              pasión.No importa si eres principiante o experto. En Pleimeit
+              pasión. No importa si eres principiante o experto. En Pleimeit
               puedes filtrar los eventos por nivel de juego para que siempre te
               sientas cómodo y disfrutes del partido al máximo.
             </p>
 
-            <div className="lg:hidden mb-2 lg:mb-8 w-full flex justify-center">
+            <div className="lg:hidden mb-8 w-full flex justify-center">
               <img
                 src="/images/home/Athletes-footer-mobile.png"
                 alt="Aplicación Pleimeit en móvil"
@@ -64,7 +63,7 @@ const DownloadComponent = () => {
               />
             </div>
 
-            <div className="flex flex-row xs:justify-center lg:justify-start items-center gap-4 mb-12 lg:mb-0">
+            <div className="flex flex-row justify-center lg:justify-start items-center gap-4">
               <Link
                 href="#"
                 target="_blank"
@@ -77,7 +76,7 @@ const DownloadComponent = () => {
                   width={200}
                   height={80}
                   quality={90}
-                  className="h-12 w-34 lg:h-13 lg:w-44   cursor-pointer transition-transform hover:scale-105"
+                  className="h-12 w-auto lg:h-13 cursor-pointer transition-transform hover:scale-105"
                 />
               </Link>
 
@@ -93,25 +92,28 @@ const DownloadComponent = () => {
                   width={200}
                   height={80}
                   quality={90}
-                  className="h-12 w-34 lg:h-13 lg:w-44   cursor-pointer transition-transform hover:scale-105"
+                  className="h-12 w-auto lg:h-13 cursor-pointer transition-transform hover:scale-105"
                 />
               </Link>
             </div>
           </div>
 
-          <div className="hidden lg:block" />
+         
+          <div className="hidden lg:block flex-1" />
         </div>
       </div>
+
+
       <div
         className={`
-    hidden lg:block
-    absolute right-0 bottom-0
-    w-full lg:w-[53%]
-    h-[78vh]
-    pointer-events-none
-    transition-all duration-700 delay-200
-    ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"}
-  `}
+          hidden lg:block
+          absolute right-0 bottom-0
+          w-full lg:w-[53%]
+          max-h-[85vh] h-full
+          pointer-events-none
+          transition-all duration-700 delay-200
+          ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"}
+        `}
       >
         <Image
           src="/images/home/Athletes-footer.png"
