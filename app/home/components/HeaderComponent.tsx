@@ -1,9 +1,6 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import PleimitLogo from "../../../public/images/home/PleimitLogo.png";
-import AppStore from "../../../public/images/home/AppStore.png";
-import GooglePlay from "../../../public/images/home/GooglePlay.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
@@ -23,7 +20,7 @@ const HeaderComponent = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      const isMobile = window.innerWidth < 1280;
+      const isMobile = window.innerWidth < 1024; 
       setIsMobileState(isMobile);
 
       if (!isMobile) {
@@ -44,14 +41,14 @@ const HeaderComponent = () => {
     };
   }, [isMenuOpenState]);
 
-  const navItemClasses = "cursor-pointer text-white transition hover:scale-110";
+  const navItemClasses = "cursor-pointer text-white transition-all hover:scale-110";
 
   return (
-    <nav className=" w-full bg-purpleBackground ">
+    <nav className="w-full bg-purpleBackground">
       <div className="max-w-7xl mx-auto w-full px-6 md:px-12 lg:px-20 flex justify-between items-center h-18">
         <Link href="/" onClick={handleLinkClick}>
           <Image
-            src={PleimitLogo}
+            src="/images/home/PleimitLogo.png"
             alt="logo"
             height={100}
             width={170}
@@ -59,7 +56,7 @@ const HeaderComponent = () => {
           />
         </Link>
 
-        <ul className="hidden lg:flex gap-17  font-raleway text-sm tracking-[0.25em] uppercase font-extrabold">
+        <ul className="hidden lg:flex gap-10 font-raleway text-sm tracking-[0.25em] uppercase font-extrabold">
           <li className={navItemClasses}>
             <Link href="/#home" onClick={handleLinkClick}>
               HOME
@@ -89,22 +86,27 @@ const HeaderComponent = () => {
       </div>
 
       {isMenuOpenState && (
-        <div className="fixed top-0 left-0 w-full h-full bg-purpleBackground p-8 z-50 menu-slide-down flex flex-col">
+        <div className="fixed top-0 left-0 w-full h-full bg-purpleBackground px-6 md:px-8 py-8 z-50 flex flex-col animate-slide-down">
           <div className="flex justify-between items-center mb-12">
             <Link href="/" onClick={toggleMenu}>
-              <Image src={PleimitLogo} alt="logo" width={140} height={140} />
+              <Image 
+                src="/images/home/PleimitLogo.png" 
+                alt="logo" 
+                width={140} 
+                height={50}
+              />
             </Link>
 
             <button
               onClick={toggleMenu}
               aria-label="close menu"
-              className="w-10 h-10 rounded-full bg-black flex items-center justify-center"
+              className="w-10 h-10 rounded-full bg-black flex items-center justify-center transition-transform hover:scale-110"
             >
               <FaTimes size={15} className="text-white" />
             </button>
           </div>
 
-          <ul className="flex flex-col gap-20 text-white tracking-[0.22em] font-raleway font-extrabold text-xl">
+          <ul className="flex flex-col gap-12 text-white tracking-[0.22em] font-raleway font-extrabold text-xl">
             <li>
               <Link href="/#home" onClick={handleLinkClick}>
                 HOME
@@ -125,7 +127,7 @@ const HeaderComponent = () => {
           </ul>
 
           <div className="mt-auto">
-            <div className="flex gap-3 mb-6 items-center justify-center">
+            <div className="flex gap-4 mb-6 items-center justify-center">
               <Link
                 href="#"
                 target="_blank"
@@ -133,11 +135,11 @@ const HeaderComponent = () => {
                 className="block"
               >
                 <Image
-                  src={AppStore}
+                  src="/images/home/AppStore.png"
                   alt="app-store"
                   height={250}
                   width={150}
-                  className="h-13 w-38 cursor-pointer transition-transform hover:scale-105"
+                  className="h-13 w-auto cursor-pointer transition-transform hover:scale-105"
                 />
               </Link>
 
@@ -148,11 +150,11 @@ const HeaderComponent = () => {
                 className="block"
               >
                 <Image
-                  src={GooglePlay}
+                  src="/images/home/GooglePlay.png"
                   alt="google-play"
                   height={250}
                   width={150}
-                  className="h-13 w-38 cursor-pointer transition-transform hover:scale-105"
+                  className="h-13 w-auto cursor-pointer transition-transform hover:scale-105"
                 />
               </Link>
             </div>

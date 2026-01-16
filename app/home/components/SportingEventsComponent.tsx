@@ -44,59 +44,47 @@ const SportingEventsComponent = () => {
         className={`
           section-container flex flex-col lg:flex-row  
           flex-1
-          items-center lg:justify-center gap-6.75  lg:gap-10  mx-auto xl:gap-20
-          transition-all duration-700 ease-out px-6 md:px-12  lg:px-20 max-w-7xl
+          items-center lg:justify-center gap-8 lg:gap-20 mx-auto
+          transition-all duration-700 ease-out px-6 md:px-12 lg:px-20 max-w-7xl
           ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }
         `}
       >
-        <div className="order-1 lg:order-2 w-full lg:w-87.5  xl:w-126 flex flex-col gap-4 text-center lg:text-left">
-          <h1 className="font-inter text-2xl xs:text-2xl lg:text-[48px] text-textBlack font-bold">
+       
+        <div className="order-1 lg:order-2 w-full lg:flex-1 flex flex-col gap-4 text-center lg:text-left">
+          <h1 className="font-inter text-2xl xs:text-3xl lg:text-4xl xl:text-5xl text-textBlack font-bold">
             Explora eventos deportivos cerca de ti
           </h1>
 
-          <p className="text-textBlack font-inter text-[16px] lg:text-[20px] max-w-xl mx-auto lg:mx-0">
+          <p className="text-textBlack font-inter text-base lg:text-lg xl:text-xl max-w-xl mx-auto lg:mx-0">
             Descubre partidos, retos y actividades según tu ubicación. Filtra
             por deporte, fecha o nivel de juego y únete con un solo clic.
           </p>
         </div>
-        <div className="order-2 lg:order-1 flex gap-2   lg:gap-9.5  xl:gap-12.5">
-          <div
-            className="shadow-[0_8px_0
-          0px_rgba(0,0,0,0.15)] rounded-2xl overflow-hidden"
-          >
-            <div
-              className="
-       w-39.25 h-90
-        sm:w-50 sm:h-107.5 md:w-55 md:h-120 lg:w-60 lg:h-130
-       xl:w-76 xl:h-156
-        relative
-      "
-            >
+
+
+        <div className="order-2 lg:order-1 w-full lg:flex-1 flex gap-3 lg:gap-4 justify-center">
+          <div className="flex-1 max-w-[200px] sm:max-w-[280px] lg:max-w-[340px] shadow-[0_8px_20px_rgba(0,0,0,0.15)] rounded-2xl overflow-hidden">
+            <div className="relative w-full aspect-[9/19.5]">
               <Image
                 src="/images/home/Event1.png"
                 alt="event-1"
                 fill
                 quality={90}
+                className="object-contain"
               />
             </div>
           </div>
 
-          <div className="shadow-[0_8px_30px_rgba(0,0,0,0.15)] rounded-2xl overflow-hidden">
-            <div
-              className="
-       w-39.25 h-90
-        sm:w-55 sm:h-107.5  md:w-55 md:h-120  lg:w-60 lg:h-130
-     xl:w-76 xl:h-156
-        relative
-      "
-            >
+          <div className="flex-1 max-w-[200px] sm:max-w-[280px] lg:max-w-[340px] shadow-[0_8px_20px_rgba(0,0,0,0.15)] rounded-2xl overflow-hidden">
+            <div className="relative w-full aspect-[9/19.5]">
               <Image
                 src="/images/home/Event2.png"
                 alt="event-2"
                 fill
                 quality={90}
+                className="object-contain"
               />
             </div>
           </div>
