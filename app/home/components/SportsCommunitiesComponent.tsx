@@ -55,8 +55,7 @@ const SportsCommunitiesComponent = () => {
             </h1>
 
             <p className="text-textBlack font-inter text-[16px] lg:text-[18px] lg:w-71 xl:w-96">
-              Conecta con jugadores de tu mismo deporte, comparte tips, organiza
-              nuevos partidos y mantente al día con lo que pasa en tu comunidad.
+         Conecta con jugadores de tu mismo deporte, comparte consejos, solicita recomendaciones, organiza nuevos eventos y mantente al día con lo que pasa en tu comunidad.
             </p>
           </div>
 
