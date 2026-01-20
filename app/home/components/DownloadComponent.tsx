@@ -1,6 +1,7 @@
 "use client";
+import { useState } from "react";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 
 const DownloadComponent = () => {
@@ -104,23 +105,23 @@ const DownloadComponent = () => {
       </div>
 
 
-      <div
-        className={`
-          hidden lg:block
-          absolute right-0 bottom-0
-          w-full lg:w-[53%]
-          max-h-[85vh] h-full
-          pointer-events-none
-          transition-all duration-700 delay-200
-          ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"}
-        `}
-      >
+     <div
+  className={`
+    hidden lg:block
+
+   absolute right-[-250px] bottom-0 w-full lg:w-[60%] h-full overflow-y-hidden
+    pointer-events-none
+    transition-all duration-1000 delay-200
+    ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-24"}
+  `}
+>
         <Image
           src="/images/home/Athletes-footer.png"
           alt="Atletas Pleimeit"
           fill
-          quality={90}
-          className="object-contain object-bottom"
+          quality={95}
+          className="object-cover object-top"
+          priority
         />
       </div>
     </section>
