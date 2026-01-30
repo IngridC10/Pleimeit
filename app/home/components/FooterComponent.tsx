@@ -54,7 +54,7 @@ const FooterComponent = () => {
 
             <div className="flex gap-5 text-gray-800">
               <Link
-                href="https://www.instagram.com/pleimeit"
+                href="https://www.instagram.com/pleimeit/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -95,7 +95,7 @@ const FooterComponent = () => {
          
           <div className="hidden lg:flex gap-5 text-gray-800">
             <Link
-              href="https://www.instagram.com/pleimeit"
+              href="https://www.instagram.com/pleimeit/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
