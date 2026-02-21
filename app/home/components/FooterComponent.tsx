@@ -15,13 +15,13 @@ const FooterComponent = () => {
               </Link>
             </li>
             <li>
-              <Link href="/#" className="hover:text-purpleBackground transition-colors">
-                Términos de uso
+              <Link href="/terminos-de-uso" className="hover:text-purpleBackground transition-colors">
+                Términos y condiciones
               </Link>
             </li>
             <li>
-              <Link href="/#" className="hover:text-purpleBackground transition-colors">
-                Política de privacidad
+              <Link href="/politica-de-privacidad" className="hover:text-purpleBackground transition-colors">
+                Políticas de privacidad
               </Link>
             </li>
             <li>
